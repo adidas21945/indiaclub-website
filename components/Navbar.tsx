@@ -7,21 +7,21 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const linkStyle = (path: string) =>
-    `px-4 py-2 ${
-      pathname === path ? "text-orange-600 font-bold" : "text-gray-700"
+    `px-4 py-2 text-lg ${
+      pathname === path ? "text-orange-600 font-bold" : "text-green-800 font-semibold"
     }`;
 
   return (
-    <nav className="flex items-center justify-between border-b p-4 font-sans">
+    <nav className="sticky top-0 z-50 bg-white flex items-center justify-between border-b py-6 px-6 navbar-font" style={{ fontFamily: '"Satoshi", system-ui, -apple-system, sans-serif' }}>
       {/* Logo that redirects home */}
       <Link href="/" className="flex items-center gap-2">
         <Image
           src="/images/favicon.ico"
           alt="India Club @ Georgia Tech Logo"
-          width={40}
-          height={40}
+          width={60}
+          height={60}
         />
-        <span className="font-bold text-lg">India Club @ GT</span>
+        <span className="font-bold text-2xl">India Club @ GT</span>
       </Link>
 
       {/* Tabs */}
@@ -45,8 +45,8 @@ export default function Navbar() {
           <Image
             src="/images/instagrammono.png"
             alt="External Tab 1"
-            width={40}
-            height={40}
+            width={50}
+            height={50}
             className="hover:opacity-80 cursor-pointer"
           />
         </a>
