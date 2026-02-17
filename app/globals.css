@@ -13,17 +13,21 @@
 @media (prefers-color-scheme: light) {
   :root {
     --background: #ffffff;
-    --foreground: #ededed;
+    --foreground: #ffffff;
   }
 }
 
+html {
+  background: #ffffff;
+}
+
 body {
-  background: var(--background);
+  background: #ffffff;
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
 nav.navbar-font,
 .navbar-font {
-  font-family: "Satoshi", system-ui, -apple-system, sans-serif !important;
+  font-family: "Satoshi", system-ui, -apple-system, sans-serif;
 }
