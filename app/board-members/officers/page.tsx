@@ -51,7 +51,7 @@ const boardBranches: Branch[] = [
     name: "Marketing",
     officers: [
       { name: "Gargi Gupta", position: "VP Marketing", thumbnail: "/images/gargi.jpg" },
-      { name: "Tanushri Kemisetti", position: "VP Marketing", thumbnail: "/images/IClogo.png" },
+      { name: "Tanushri Kemisetti", position: "VP Marketing", thumbnail: "/images/tanushri.png" },
     ],
   },
   {
