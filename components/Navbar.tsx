@@ -179,7 +179,7 @@ export default function Navbar() {
                 className="block py-2 px-3 rounded-lg bg-gray-100 hover:bg-gray-300 transition-colors duration-200 text-lg text-green-800 font-semibold hover:text-orange-600"
                 onClick={() => setIsSidebarOpen(false)}
               >
-                Contact
+                Contact Us
               </a>
               <a
                 href="https://www.instagram.com/indiaclub_gt/"
