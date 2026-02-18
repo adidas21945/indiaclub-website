@@ -3,7 +3,7 @@ import Image from "next/image";
 const upcomingEvents = [
   {
     name: "Mock Shaadi",
-    link: "https://www.instagram.com/p/DUQ1yOqkgIz/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==",
+    link: "https://doorlist.app/e/Ngo5Mob?s=6ASqMnKnCA",
     thumbnail: "/images/shaadi.png",
     subtitle: "February 21, 2026",
   },
