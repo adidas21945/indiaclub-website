@@ -65,7 +65,7 @@ const boardBranches: Branch[] = [
 
 export default function Officers() {
   return (
-    <main className="h-[calc(100vh-120px)] overflow-y-auto px-6 py-10">
+    <main className="px-6 py-10">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-green-800 mb-10">Officers</h1>
 
