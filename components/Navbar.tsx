@@ -92,7 +92,7 @@ export default function Navbar() {
 
           <a href="mailto:info@indiaclub.gatech.edu" className="flex items-center mx-1">
             <Image
-              src="/images/mailwhite.png"
+              src="/images/mailicon.png"
               alt="Email Contact"
               title="Contact Us"
               width={60}
