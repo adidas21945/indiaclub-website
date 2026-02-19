@@ -17,9 +17,11 @@ export default function Navbar() {
     }`;
 
   const subLinkStyle = (path: string) =>
-    `block px-4 py-2 text-sm text-center ${
-      pathname === path ? "text-orange-600 font-bold" : "text-green-800 font-semibold"
-    } hover:bg-gray-100`;
+    `block px-4 py-2 text-sm text-center transition-colors duration-200 ${
+      pathname === path
+        ? "text-[#b8c7d9] font-bold"
+        : "text-white font-semibold hover:text-[#b8c7d9]"
+    }`;
 
   const sidebarLinkStyle = (path: string) =>
     `block w-full py-2 px-3 rounded-none transition-colors duration-200 text-lg ${
@@ -71,7 +73,7 @@ export default function Navbar() {
               Members
             </span>
             {isMembersDropdownOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 bg-white border border-gray-200 rounded-md shadow-lg w-[150px] z-50">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 bg-[#001f3f] border border-[#f7f7f7] rounded-md shadow-lg w-[150px] z-50">
                 <Link
                   href="/board-members/structure"
                   className={subLinkStyle("/board-members/structure")}
