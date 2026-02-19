@@ -71,7 +71,7 @@ export default function Navbar() {
               Members
             </span>
             {isMembersDropdownOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 bg-white border border-gray-200 rounded-md shadow-lg w-[150px] z-50">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 bg-white border border-gray-200 rounded-md shadow-lg w-[150px] z-50">
                 <Link
                   href="/board-members/structure"
                   className={subLinkStyle("/board-members/structure")}
