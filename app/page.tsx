@@ -6,7 +6,7 @@ export default function Home() {
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/diwaliboard.jpg)',
-          backgroundPosition: 'center bottom',
+          backgroundPosition: 'center calc(100% + 40px)',
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
