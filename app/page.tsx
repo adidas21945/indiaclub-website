@@ -1,23 +1,45 @@
+"use client";
+
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
 export default function Home() {
+  const [entered, setEntered] = useState(false);
+
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => setEntered(true));
+    return () => cancelAnimationFrame(frame);
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center relative overflow-hidden -m-6">
-      {/* Background image with overlay for text readability */}
-      <div 
-        className="absolute inset-0 bg-cover bg-no-repeat"
-        style={{
-          backgroundImage: 'url(/images/diwaliboard.jpg)',
-          backgroundPosition: 'center calc(100% + 40px)',
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
-      </div>
-      
-      <main className="relative z-10 flex flex-col items-center justify-center py-16 px-8 text-center">
-        <h1 className="text-4xl font-bold mb-4 text-white">Welcome to India Club @ GT</h1>
-        <p className="text-lg text-white/90 max-w-2xl">
-          Cultural organization running events for Diwali, Holi, and more.
+    <section className="relative min-h-screen w-full overflow-hidden">
+      <Image
+        src="/images/holi.avif"
+        alt="Holi celebration crowd"
+        fill
+        priority
+        className="object-cover object-center"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/35" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_30%,rgba(255,255,255,0.16),transparent_48%)]" />
+
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col justify-center px-6 md:px-16 -translate-y-40">
+        <h1
+          className={`self-start text-left text-white text-7xl md:text-[9rem] lg:text-[11rem] leading-[0.9] drop-shadow-[0_10px_24px_rgba(0,0,0,0.5)] transition-all duration-900 ease-out ${
+            entered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-24"
+          }`}
+        >
+          India Club
+        </h1>
+        <p
+          className={`mt-6 self-end text-right text-white/95 text-3xl md:text-5xl drop-shadow-[0_6px_14px_rgba(0,0,0,0.4)] transition-all duration-900 delay-100 ease-out ${
+            entered ? "opacity-100 -translate-x-[50px]" : "opacity-0 translate-x-24"
+          }`}
+        >
+          at Georgia Tech
         </p>
-      </main>
-    </div>
+      </div>
+    </section>
   );
 }

@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const linkStyle = (path: string) =>
-    `px-4 py-2 text-lg transition-colors duration-200 ${
+    `px-2 py-1 text-base transition-colors duration-200 ${
       pathname === path
         ? "text-[#b8c7d9] font-bold"
         : "text-white font-semibold hover:text-[#b8c7d9]"
@@ -38,21 +38,21 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="sticky top-0 z-50 bg-[#001f3f] flex items-center justify-between py-6 px-6 rounded-b-lg navbar-font"
+        className="sticky top-0 z-50 bg-[#001f3f] border-b-2 border-[#f7f7f7] flex items-center justify-between py-3 px-4 navbar-font"
       >
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/IClogowhite.png"
             alt="India Club @ Georgia Tech Logo"
-            width={74}
-            height={74}
+            width={37}
+            height={37}
           />
-          <span className="ml-[5px] font-bold text-2xl text-white transition-colors duration-200 hover:text-[#b8c7d9]">
+          <span className="ml-[5px] font-bold text-xl text-white transition-colors duration-200 hover:text-[#b8c7d9]">
             India Club @ GT
           </span>
         </Link>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <Link className={linkStyle("/")} href="/">Home</Link>
           <Link className={linkStyle("/about")} href="/about">About</Link>
           <Link className={linkStyle("/join")} href="/join">Get Involved</Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
             onMouseLeave={() => setIsMembersDropdownOpen(false)}
           >
             <span
-              className={`px-4 py-2 text-lg cursor-default transition-colors duration-200 ${
+              className={`px-2 py-1 text-base cursor-default transition-colors duration-200 ${
                 pathname === "/board-members" || pathname.startsWith("/board-members/")
                   ? "text-[#b8c7d9] font-bold"
                   : "text-white font-semibold hover:text-[#b8c7d9]"
@@ -89,13 +89,13 @@ export default function Navbar() {
           </div>
           <Link className={linkStyle("/events")} href="/events">Events</Link>
 
-          <a href="mailto:info@indiaclub.gatech.edu" className="flex items-center mx-1">
+          <a href="mailto:info@indiaclub.gatech.edu" className="flex items-center px-2 py-1">
             <Image
               src="/images/mailicon.png"
               alt="Email Contact"
               title="Contact Us"
-              width={60}
-              height={60}
+              width={30}
+              height={30}
               className="hover:opacity-80 cursor-pointer"
             />
           </a>
@@ -103,14 +103,14 @@ export default function Navbar() {
             href="https://www.instagram.com/indiaclub_gt/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center mx-1"
+            className="flex items-center px-2 py-1"
           >
             <Image
               src="/images/instagramwhite.png"
               alt="Instagram"
               title="Instagram"
-              width={50}
-              height={50}
+              width={25}
+              height={25}
               className="hover:opacity-80 cursor-pointer"
             />
           </a>
@@ -119,14 +119,14 @@ export default function Navbar() {
             href="https://www.tiktok.com/@indiaclub_gt"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center mx-1"
+            className="flex items-center px-2 py-1"
           >
             <Image
               src="/images/tiktoklogo.png"
               alt="Tiktok"
               title="Tiktok"
-              width={40}
-              height={40}
+              width={20}
+              height={20}
               className="hover:opacity-80 cursor-pointer"
             />
           </a>
@@ -135,11 +135,11 @@ export default function Navbar() {
             type="button"
             aria-label="Open navigation menu"
             onClick={() => setIsSidebarOpen(true)}
-            className="ml-2 p-2 rounded-md hover:bg-gray-300 transition-colors duration-200"
+            className="p-1.5 rounded-md hover:bg-gray-300 transition-colors duration-200"
           >
-            <span className="block w-7 h-0.5 bg-white mb-1.5" />
-            <span className="block w-7 h-0.5 bg-white mb-1.5" />
-            <span className="block w-7 h-0.5 bg-white" />
+            <span className="block w-4 h-0.5 bg-white mb-1" />
+            <span className="block w-4 h-0.5 bg-white mb-1" />
+            <span className="block w-4 h-0.5 bg-white" />
           </button>
         </div>
       </nav>
