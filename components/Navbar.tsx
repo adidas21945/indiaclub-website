@@ -10,8 +10,10 @@ export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const linkStyle = (path: string) =>
-    `px-4 py-2 text-lg ${
-      pathname === path ? "text-orange-600 font-bold" : "text-green-800 font-semibold"
+    `px-4 py-2 text-lg transition-colors duration-200 ${
+      pathname === path
+        ? "text-[#b8c7d9] font-bold"
+        : "text-white font-semibold hover:text-[#b8c7d9]"
     }`;
 
   const subLinkStyle = (path: string) =>
@@ -20,29 +22,35 @@ export default function Navbar() {
     } hover:bg-gray-100`;
 
   const sidebarLinkStyle = (path: string) =>
-    `block w-full py-2 px-3 rounded-none bg-gray-100 hover:bg-gray-300 transition-colors duration-200 text-lg ${
-      pathname === path ? "text-orange-600 font-bold" : "text-green-800 font-semibold"
+    `block w-full py-2 px-3 rounded-none transition-colors duration-200 text-lg ${
+      pathname === path
+        ? "text-[#b8c7d9] font-bold"
+        : "text-white font-semibold hover:text-[#b8c7d9]"
     }`;
 
   const sidebarSubLinkStyle = (path: string) =>
-    `block w-full py-2 px-3 rounded-none bg-gray-100 hover:bg-gray-300 transition-colors duration-200 text-lg text-green-800 font-medium ${
-      pathname === path ? "text-orange-600" : ""
+    `block w-full py-2 px-3 rounded-none transition-colors duration-200 text-lg ${
+      pathname === path
+        ? "text-[#b8c7d9] font-semibold"
+        : "text-white font-medium hover:text-[#b8c7d9]"
     }`;
 
   return (
     <>
       <nav
-        className="sticky top-0 z-50 bg-gray-200 flex items-center justify-between py-6 px-6 rounded-b-lg navbar-font"
+        className="sticky top-0 z-50 bg-[#001f3f] flex items-center justify-between py-6 px-6 rounded-b-lg navbar-font"
         style={{ fontFamily: '"Satoshi", system-ui, -apple-system, sans-serif' }}
       >
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/IClogo.png"
+            src="/images/IClogowhite.png"
             alt="India Club @ Georgia Tech Logo"
-            width={60}
-            height={60}
+            width={74}
+            height={74}
           />
-          <span className="font-bold text-2xl">India Club @ GT</span>
+          <span className="font-bold text-2xl text-white transition-colors duration-200 hover:text-[#b8c7d9]">
+            India Club @ GT
+          </span>
         </Link>
 
         <div className="flex items-center gap-4">
@@ -55,10 +63,10 @@ export default function Navbar() {
             onMouseLeave={() => setIsMembersDropdownOpen(false)}
           >
             <span
-              className={`px-4 py-2 text-lg cursor-default ${
+              className={`px-4 py-2 text-lg cursor-default transition-colors duration-200 ${
                 pathname === "/board-members" || pathname.startsWith("/board-members/")
-                  ? "text-orange-600 font-bold"
-                  : "text-green-800 font-semibold"
+                  ? "text-[#b8c7d9] font-bold"
+                  : "text-white font-semibold hover:text-[#b8c7d9]"
               }`}
             >
               Members
@@ -82,9 +90,9 @@ export default function Navbar() {
           </div>
           <Link className={linkStyle("/events")} href="/events">Events</Link>
 
-          <a href="mailto:info@indiaclub.gatech.edu" className="flex items-center">
+          <a href="mailto:info@indiaclub.gatech.edu" className="flex items-center mx-1">
             <Image
-              src="/images/emailmono.svg"
+              src="/images/mailwhite.png"
               alt="Email Contact"
               title="Contact Us"
               width={60}
@@ -96,10 +104,10 @@ export default function Navbar() {
             href="https://www.instagram.com/indiaclub_gt/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center mx-1"
           >
             <Image
-              src="/images/instagrammono.png"
+              src="/images/instagramwhite.png"
               alt="Instagram"
               title="Instagram"
               width={50}
@@ -112,10 +120,10 @@ export default function Navbar() {
             href="https://www.tiktok.com/@indiaclub_gt"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center mx-1"
           >
             <Image
-              src="/images/tiktokmono.png"
+              src="/images/tiktoklogo.png"
               alt="Tiktok"
               title="Tiktok"
               width={40}
@@ -130,9 +138,9 @@ export default function Navbar() {
             onClick={() => setIsSidebarOpen(true)}
             className="ml-2 p-2 rounded-md hover:bg-gray-300 transition-colors duration-200"
           >
-            <span className="block w-7 h-0.5 bg-green-800 mb-1.5" />
-            <span className="block w-7 h-0.5 bg-green-800 mb-1.5" />
-            <span className="block w-7 h-0.5 bg-green-800" />
+            <span className="block w-7 h-0.5 bg-white mb-1.5" />
+            <span className="block w-7 h-0.5 bg-white mb-1.5" />
+            <span className="block w-7 h-0.5 bg-white" />
           </button>
         </div>
       </nav>
@@ -143,16 +151,16 @@ export default function Navbar() {
           onClick={() => setIsSidebarOpen(false)}
         >
           <aside
-            className="absolute top-0 right-0 h-full w-72 bg-gray-100 shadow-xl p-6"
+            className="absolute top-0 right-0 h-full w-72 bg-[#001f3f] shadow-xl p-6"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-green-800">Menu</h2>
+              <h2 className="text-2xl font-bold text-white">Menu</h2>
               <button
                 type="button"
                 aria-label="Close navigation menu"
                 onClick={() => setIsSidebarOpen(false)}
-                className="text-2xl leading-none text-green-800 hover:text-orange-600"
+                className="text-2xl leading-none text-white hover:text-[#b8c7d9]"
               >
                 ×
               </button>
@@ -163,7 +171,7 @@ export default function Navbar() {
               <Link href="/about" className={sidebarLinkStyle("/about")} onClick={() => setIsSidebarOpen(false)}>About</Link>
               <Link href="/join" className={sidebarLinkStyle("/join")} onClick={() => setIsSidebarOpen(false)}>Get Involved</Link>
               <div>
-                <p className="text-green-800 font-semibold text-lg px-3 py-2 rounded-none bg-gray-100">Members</p>
+                <p className="text-white font-semibold text-lg px-3 py-2 rounded-none">Members</p>
                 <div>
                   <Link href="/board-members/structure" className={`${sidebarSubLinkStyle("/board-members/structure")} pl-7`} onClick={() => setIsSidebarOpen(false)}>
                     Structure
@@ -176,7 +184,7 @@ export default function Navbar() {
               <Link href="/events" className={sidebarLinkStyle("/events")} onClick={() => setIsSidebarOpen(false)}>Events</Link>
               <a
                 href="mailto:info@indiaclub.gatech.edu"
-                className="block py-2 px-3 rounded-lg bg-gray-100 hover:bg-gray-300 transition-colors duration-200 text-lg text-green-800 font-semibold hover:text-orange-600"
+                className="block py-2 px-3 rounded-lg transition-colors duration-200 text-lg text-white font-semibold hover:text-[#b8c7d9]"
                 onClick={() => setIsSidebarOpen(false)}
               >
                 Contact Us
@@ -185,7 +193,7 @@ export default function Navbar() {
                 href="https://www.instagram.com/indiaclub_gt/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block py-2 px-3 rounded-lg bg-gray-100 hover:bg-gray-300 transition-colors duration-200 text-lg text-green-800 font-semibold hover:text-orange-600"
+                className="block py-2 px-3 rounded-lg transition-colors duration-200 text-lg text-white font-semibold hover:text-[#b8c7d9]"
                 onClick={() => setIsSidebarOpen(false)}
               >
                 Instagram
@@ -194,7 +202,7 @@ export default function Navbar() {
                 href="https://www.tiktok.com/@indiaclub_gt"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block py-2 px-3 rounded-lg bg-gray-100 hover:bg-gray-300 transition-colors duration-200 text-lg text-green-800 font-semibold hover:text-orange-600"
+                className="block py-2 px-3 rounded-lg transition-colors duration-200 text-lg text-white font-semibold hover:text-[#b8c7d9]"
                 onClick={() => setIsSidebarOpen(false)}
               >
                 TikTok
