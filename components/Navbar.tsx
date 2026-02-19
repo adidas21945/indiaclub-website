@@ -39,7 +39,6 @@ export default function Navbar() {
     <>
       <nav
         className="sticky top-0 z-50 bg-[#001f3f] flex items-center justify-between py-6 px-6 rounded-b-lg navbar-font"
-        style={{ fontFamily: '"Satoshi", system-ui, -apple-system, sans-serif' }}
       >
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -48,7 +47,7 @@ export default function Navbar() {
             width={74}
             height={74}
           />
-          <span className="font-bold text-2xl text-white transition-colors duration-200 hover:text-[#b8c7d9]">
+          <span className="ml-[5px] font-bold text-2xl text-white transition-colors duration-200 hover:text-[#b8c7d9]">
             India Club @ GT
           </span>
         </Link>

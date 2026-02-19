@@ -23,11 +23,11 @@ export default function Join() {
               className="object-cover group-hover:scale-[1.02] transition-transform duration-300"
             />
           </div>
-          <div className="p-4 text-center">
-            <h2 className="text-xl font-semibold text-green-800 group-hover:text-orange-600 transition-colors duration-300">
+          <div className="p-4 text-center bg-white group-hover:bg-gradient-to-r group-hover:from-green-700 group-hover:to-orange-500 transition-all duration-300">
+            <h2 className="text-xl font-semibold text-green-800 group-hover:text-white transition-colors duration-300">
               India Club on Engage
             </h2>
-            <p className="text-sm text-gray-600 mt-1 group-hover:text-orange-600 transition-colors duration-300">
+            <p className="text-sm text-gray-600 mt-1 group-hover:text-white transition-colors duration-300">
               Click to join on CampusLabs Engage
             </p>
           </div>

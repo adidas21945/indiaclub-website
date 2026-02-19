@@ -77,19 +77,19 @@ export default function Officers() {
                 {branch.officers.map((officer) => (
                   <article
                     key={`${branch.name}-${officer.name}`}
-                    className="rounded-xl overflow-hidden bg-white shadow-md w-full max-w-[280px]"
+                    className="group rounded-xl overflow-hidden bg-white shadow-md w-full max-w-[280px] hover:shadow-xl transition-shadow duration-300"
                   >
                     <div className="relative aspect-[3/4]">
                       <Image
                         src={officer.thumbnail}
                         alt={`${officer.name} headshot`}
                         fill
-                        className="object-cover object-top"
+                        className="object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
                       />
                     </div>
-                    <div className="p-4">
-                      <h3 className="text-xl font-semibold text-green-800">{officer.name}</h3>
-                      <p className="text-sm text-gray-600 mt-1">{officer.position}</p>
+                    <div className="p-4 bg-white group-hover:bg-gradient-to-r group-hover:from-green-700 group-hover:to-orange-500 transition-all duration-300">
+                      <h3 className="text-xl font-semibold text-green-800 group-hover:text-white transition-colors duration-300">{officer.name}</h3>
+                      <p className="text-sm text-gray-600 mt-1 group-hover:text-white transition-colors duration-300">{officer.position}</p>
                     </div>
                   </article>
                 ))}
