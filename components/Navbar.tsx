@@ -54,7 +54,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="flex items-center gap-3 justify-self-center">
+        <div className="flex items-center gap-5 justify-self-center">
           <Link className={linkStyle("/")} href="/">Home</Link>
           <Link className={linkStyle("/about")} href="/about">About</Link>
           <Link className={linkStyle("/join")} href="/join">Get Involved</Link>
