@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const linkStyle = (path: string) =>
-    `px-2 py-1 text-base transition-colors duration-200 ${
+    `px-2 py-1 text-base text-center transition-colors duration-200 ${
       pathname === path
         ? "text-[#b8c7d9] font-bold"
         : "text-white font-semibold hover:text-[#b8c7d9]"
@@ -38,21 +38,21 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="sticky top-0 z-50 bg-[#001f3f] border-b-2 border-[#f7f7f7] flex items-center justify-between py-3 px-4 navbar-font"
+        className="sticky top-0 z-50 bg-[#001f3f] border-b-2 border-[#f7f7f7] grid grid-cols-[320px_auto_320px] items-center py-3 px-4 navbar-font"
       >
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2 justify-self-start w-[320px]">
           <Image
             src="/images/IClogowhite.png"
             alt="India Club @ Georgia Tech Logo"
-            width={37}
-            height={37}
+            width={32}
+            height={32}
           />
-          <span className="ml-[5px] font-bold text-xl text-white transition-colors duration-200 hover:text-[#b8c7d9]">
+          <span className="ml-[4px] font-bold text-lg text-white transition-colors duration-200 hover:text-[#b8c7d9]">
             India Club @ GT
           </span>
         </Link>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 justify-self-center">
           <Link className={linkStyle("/")} href="/">Home</Link>
           <Link className={linkStyle("/about")} href="/about">About</Link>
           <Link className={linkStyle("/join")} href="/join">Get Involved</Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
             onMouseLeave={() => setIsMembersDropdownOpen(false)}
           >
             <span
-              className={`px-2 py-1 text-base cursor-default transition-colors duration-200 ${
+              className={`px-2 py-1 text-base text-center cursor-default transition-colors duration-200 ${
                 pathname === "/board-members" || pathname.startsWith("/board-members/")
                   ? "text-[#b8c7d9] font-bold"
                   : "text-white font-semibold hover:text-[#b8c7d9]"
@@ -88,7 +88,9 @@ export default function Navbar() {
             )}
           </div>
           <Link className={linkStyle("/events")} href="/events">Events</Link>
+        </div>
 
+        <div className="flex w-[320px] items-center justify-end gap-3 justify-self-end">
           <a href="mailto:info@indiaclub.gatech.edu" className="flex items-center px-2 py-1">
             <Image
               src="/images/mailicon.png"
