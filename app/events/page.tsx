@@ -13,9 +13,21 @@ const upcomingEvents = [
     name: "Garba Day 1",
     link: null, // TODO: registration/event link
     thumbnail: "/images/IClogo.png", // TODO: event thumbnail
-    subtitle: "Date TBD",
+    subtitle: "October 10, 2026",
+  },
+  {
+    name: "Garba Day 2",
+    link: null, // TODO: registration/event link
+    thumbnail: "/images/IClogo.png", // TODO: event thumbnail
+    subtitle: "October 17, 2026",
   },
 ];
+
+// Show soonest first. `subtitle` is used as the date, so keep it a
+// parseable date string (e.g. "October 10, 2026") for correct ordering.
+const upcomingEventsSoonestFirst = [...upcomingEvents].sort(
+  (a, b) => new Date(a.subtitle).getTime() - new Date(b.subtitle).getTime()
+);
 
 type PastEvent = {
   name: string;
@@ -78,7 +90,7 @@ export default function Events() {
         <h2 className="text-3xl font-bold text-green-800 mb-2">Upcoming Events</h2>
         <p className="text-gray-500 mb-6">Mark your calendars!</p>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {upcomingEvents.map((event) => (
+          {upcomingEventsSoonestFirst.map((event) => (
             <a
               key={event.name}
               href={event.link ?? "#"}
