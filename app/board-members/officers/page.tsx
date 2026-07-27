@@ -113,7 +113,6 @@ export default function Officers() {
                     <div className="p-4 bg-white group-hover:bg-gradient-to-r group-hover:from-green-700 group-hover:to-orange-500 transition-all duration-300">
                       <h3 className="text-xl font-semibold text-green-800 group-hover:text-white transition-colors duration-300">{officer.name}</h3>
                       <p className="text-sm text-gray-600 mt-1 group-hover:text-white transition-colors duration-300">{officer.position}</p>
-                      <p className="text-xs text-gray-500 mt-2 break-all group-hover:text-white/90 transition-colors duration-300">{officer.email}</p>
                     </div>
                   </a>
                 ))}
