@@ -61,10 +61,11 @@ const GALLERY: { src: string; alt: string; position?: string }[] = [
 const PRESIDENT_NOTE =
   "Welcome to India Club at Georgia Tech! Our mission has always been simple: to create a space where students can celebrate culture, build lasting friendships, and feel at home. Whether you're attending your first Holi celebration, performing at Diwali Night, or simply meeting new people, India Club offers opportunities to connect, grow, and create memories that will last far beyond your time at Georgia Tech. What makes this organization special is the people.";
 
-// Shreya has no photo in /public/images yet, so fall back to the logo
-// placeholder until a real headshot is added.
+// Headshots for the sitting board live in /public/images/current_exec (past
+// boards are kept in /public/images/old_exec). Shreya has no photo there yet,
+// so fall back to the logo placeholder until a real headshot is added.
 const PRESIDENTS = [
-  { photo: "/images/anaya.jpg", alt: "Anaya headshot", note: PRESIDENT_NOTE, name: "Anaya" },
+  { photo: "/images/current_exec/anaya.jpg", alt: "Anaya headshot", note: PRESIDENT_NOTE, name: "Anaya" },
   { photo: "/images/IClogowhite.png", alt: "Shreya headshot placeholder", note: PRESIDENT_NOTE, name: "Shreya" },
 ];
 

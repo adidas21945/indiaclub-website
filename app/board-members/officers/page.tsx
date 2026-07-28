@@ -23,7 +23,7 @@ const boardBranches: Branch[] = [
   {
     name: "Presidents",
     officers: [
-      { name: "Anaya Desai", position: "President", thumbnail: "/images/anaya.jpg", email: "adesai344@gatech.edu" },
+      { name: "Anaya Desai", position: "President", thumbnail: "/images/current_exec/anaya.jpg", email: "adesai344@gatech.edu" },
       { name: "Shreya Chakraborty", position: "President", thumbnail: "/images/IClogo.png", email: "schakraborty96@gatech.edu" },
     ],
   },
@@ -38,7 +38,7 @@ const boardBranches: Branch[] = [
     name: "Finance",
     officers: [
       { name: "Aditya Gupta", position: "VP Finance", thumbnail: "/images/IClogo.png", email: "agupta3240@gatech.edu" },
-      { name: "Param Desai", position: "VP Finance", thumbnail: "/images/param.jpg", email: "pdesai301@gatech.edu" },
+      { name: "Param Desai", position: "VP Finance", thumbnail: "/images/current_exec/param.jpg", email: "pdesai301@gatech.edu" },
     ],
   },
   {
@@ -53,20 +53,20 @@ const boardBranches: Branch[] = [
     officers: [
       { name: "Aadi Dash", position: "VP IT", thumbnail: "/images/IClogo.png", email: "aadidash@gatech.edu" },
       { name: "Anuj Naik", position: "VP IT", thumbnail: "/images/IClogo.png", email: "anaik88@gatech.edu" },
-      { name: "Aryan Patel", position: "VP IT", thumbnail: "/images/IClogo.png", email: "apatel937@gatech.edu" },
+      { name: "Aryan Patel", position: "VP IT", thumbnail: "/images/current_exec/aryan.jpg", email: "apatel937@gatech.edu" },
     ],
   },
   {
     name: "Marketing",
     officers: [
       { name: "Abhinav Nimmagadda", position: "VP Marketing", thumbnail: "/images/IClogo.png", email: "animmagadda7@gatech.edu" },
-      { name: "Tanushri Kemisetti", position: "VP Marketing", thumbnail: "/images/tanushri.png", email: "tkemisetti3@gatech.edu" },
+      { name: "Tanushri Kemisetti", position: "VP Marketing", thumbnail: "/images/current_exec/tanushri.png", email: "tkemisetti3@gatech.edu" },
     ],
   },
   {
     name: "Media, Arts, & Design",
     officers: [
-      { name: "Megha Yeddula", position: "VP MAD", thumbnail: "/images/IClogo.png", email: "myeddula3@gatech.edu" },
+      { name: "Megha Yeddula", position: "VP MAD", thumbnail: "/images/current_exec/megha.jpg", email: "myeddula3@gatech.edu" },
       { name: "Prisha Solanki", position: "VP MAD", thumbnail: "/images/IClogo.png", email: "psolanki37@gatech.edu" },
     ],
   },
