@@ -156,7 +156,7 @@ export default function RecruitmentPopup() {
             id="recruitment-popup-title"
             className="mt-2 text-3xl font-bold text-white"
           >
-            We&rsquo;re recruiting for our board.
+            We&rsquo;re recruiting for our board!
           </h2>
           <p className="mt-2 text-sm text-white/70">
             Come meet us this August — then apply.
