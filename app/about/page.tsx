@@ -66,7 +66,7 @@ const PRESIDENT_NOTE =
 // so fall back to the logo placeholder until a real headshot is added.
 const PRESIDENTS = [
   { photo: "/images/current_exec/anaya.jpg", alt: "Anaya headshot", note: PRESIDENT_NOTE, name: "Anaya" },
-  { photo: "/images/IClogowhite.png", alt: "Shreya headshot placeholder", note: PRESIDENT_NOTE, name: "Shreya" },
+  { photo: "/images/current_exec/shreya.jpeg", alt: "Shreya headshot placeholder", note: PRESIDENT_NOTE, name: "Shreya" },
 ];
 
 export default function About() {

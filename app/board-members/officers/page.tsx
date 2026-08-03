@@ -24,7 +24,7 @@ const boardBranches: Branch[] = [
     name: "Presidents",
     officers: [
       { name: "Anaya Desai", position: "President", thumbnail: "/images/current_exec/anaya.jpg", email: "adesai344@gatech.edu" },
-      { name: "Shreya Chakraborty", position: "President", thumbnail: "/images/IClogo.png", email: "schakraborty96@gatech.edu" },
+      { name: "Shreya Chakraborty", position: "President", thumbnail: "/images/current_exec/shreya.jpeg", email: "schakraborty96@gatech.edu" },
     ],
   },
   {
