@@ -37,7 +37,7 @@ const boardBranches: Branch[] = [
   {
     name: "Finance",
     officers: [
-      { name: "Aditya Gupta", position: "VP Finance", thumbnail: "/images/IClogo.png", email: "agupta3240@gatech.edu" },
+      { name: "Aditya Gupta", position: "VP Finance", thumbnail: "/images/current_exec/aditya.jpg", email: "agupta3240@gatech.edu" },
       { name: "Param Desai", position: "VP Finance", thumbnail: "/images/current_exec/param.jpg", email: "pdesai301@gatech.edu" },
     ],
   },
