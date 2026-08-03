@@ -30,7 +30,7 @@ const boardBranches: Branch[] = [
   {
     name: "Operations",
     officers: [
-      { name: "Nehal Harapanahalli", position: "VP Operations", thumbnail: "/images/IClogo.png", email: "nharapan3@gatech.edu" },
+      { name: "Nehal Harapanahalli", position: "VP Operations", thumbnail: "/images/current_exec/nehal.jpg", email: "nharapan3@gatech.edu" },
       { name: "Sidhaant Kadam", position: "VP Operations", thumbnail: "/images/IClogo.png", email: "skadam43@gatech.edu" },
     ],
   },
