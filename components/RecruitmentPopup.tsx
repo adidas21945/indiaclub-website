@@ -41,14 +41,14 @@ const RECRUITMENT_TIMELINE: TimelineEvent[] = [
     month: "Aug",
     day: "20",
     name: "WoW Samosa Social",
-    time: "2:15 – 4:45 PM",
+    time: "2:15 – 4:45 PM EST",
     location: "Klaus 1456",
   },
   {
     month: "Aug",
     day: "24",
     name: "Chai and Clay with The Chai Box",
-    time: "Time TBD",
+    time: "5:00 - 7:00 PM EST",
     location: "Location TBD",
   },
   {
