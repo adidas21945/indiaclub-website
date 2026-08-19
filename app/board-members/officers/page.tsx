@@ -45,7 +45,7 @@ const boardBranches: Branch[] = [
     name: "Logistics",
     officers: [
       { name: "Aditi Rajvanshi", position: "VP Logistics", thumbnail: "/images/current_exec/aditi.jpeg", email: "arajvanshi9@gatech.edu" },
-      { name: "Vaikunth Ananthanarayanan", position: "VP Logistics", thumbnail: "/images/IClogo.png", email: "vanantha9@gatech.edu" },
+      { name: "Vaikunth Ananthanarayanan", position: "VP Logistics", thumbnail: "/images/current_exec/vaikunth.jpeg", email: "vanantha9@gatech.edu" },
     ],
   },
   {
@@ -67,7 +67,7 @@ const boardBranches: Branch[] = [
     name: "Media, Arts, & Design",
     officers: [
       { name: "Megha Yeddula", position: "VP MAD", thumbnail: "/images/current_exec/megha.jpg", email: "myeddula3@gatech.edu" },
-      { name: "Prisha Solanki", position: "VP MAD", thumbnail: "/images/current_exec/prisha.JPEG", email: "psolanki37@gatech.edu" },
+      { name: "Prisha Solanki", position: "VP MAD", thumbnail: "/images/current_exec/prisha.jpg", email: "psolanki37@gatech.edu" },
     ],
   },
 ];
