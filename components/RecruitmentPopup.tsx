@@ -21,6 +21,9 @@ const APPLICATION_WINDOW = {
   closes: "August 28, 11:59 PM EST",
 };
 
+const APPLICATION_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSct9LZaw3x8ZoHx9Hhnrx_h6WgRHCGXGP2Eg3O9aIHQEho-JQ/viewform";
+
 type TimelineEvent = {
   month: string;
   day: string;
@@ -49,7 +52,7 @@ const RECRUITMENT_TIMELINE: TimelineEvent[] = [
     day: "24",
     name: "Chai and Clay with The Chai Box",
     time: "5:00 - 7:00 PM EST",
-    location: "Location TBD",
+    location: "Instructional Center Room 109",
   },
   {
     month: "Aug",
@@ -202,6 +205,15 @@ export default function RecruitmentPopup() {
               </li>
             ))}
           </ol>
+
+          <a
+            href={APPLICATION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-green-700 to-orange-500 px-6 py-3.5 text-base font-semibold text-white shadow-md transition-transform duration-200 hover:scale-[1.02] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#001f3f] focus-visible:ring-offset-2 focus-visible:ring-offset-[#faf6f0]"
+          >
+            Apply here!
+          </a>
         </div>
       </div>
     </div>
