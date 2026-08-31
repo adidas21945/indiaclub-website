@@ -7,7 +7,6 @@ import { Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import RecruitmentPopup from "@/components/RecruitmentPopup";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -133,7 +132,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <RecruitmentPopup />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
